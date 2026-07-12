@@ -1,0 +1,3 @@
+write_complete | path=Z:\tmp\wine-ccs-bom-before\ccs-utf8-output.bin mode=wb,ccs=UTF-8 payload_size=4
+bytes | path=Z:\tmp\wine-ccs-bom-before\ccs-utf8-output.bin count=7 hex=efbbbf00002274
+[INFO] Run completed | output=/tmp/wine-ccs-bom-before/ccs-utf8-output.bin

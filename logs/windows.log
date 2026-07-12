@@ -1,0 +1,2 @@
+write_complete | path=\\host.lan\Data\Documents\git\fitgirl-extract-re4\run_scheduler_probe\ccs-utf8-windows.bin mode=wb,ccs=UTF-8 payload_size=4
+bytes | path=\\host.lan\Data\Documents\git\fitgirl-extract-re4\run_scheduler_probe\ccs-utf8-windows.bin count=4 hex=00002274
