@@ -1,3 +1,18 @@
+From: Brandow Lucas <brandowlucas@gmail.com>
+Subject: [PATCH] msvcrt: Don't add a UTF-8 BOM to binary ccs streams.
+
+Native Windows does not prepend a UTF-8 BOM when a stream is opened with
+"wb, ccs=UTF-8". Wine did so despite the explicit binary mode.
+
+Only synthesize the BOM for UTF-8 text streams, and add a regression test for
+the binary mode.
+
+Signed-off-by: Brandow Lucas <brandowlucas@gmail.com>
+---
+ dlls/msvcrt/file.c       | 23 +++++++++++++----------
+ dlls/msvcrt/tests/file.c | 33 +++++++++++++++++++++++++++++++++
+ 2 files changed, 46 insertions(+), 10 deletions(-)
+
 diff --git a/dlls/msvcrt/file.c b/dlls/msvcrt/file.c
 index e5850ecf030..56cf4a98ac2 100644
 --- a/dlls/msvcrt/file.c
