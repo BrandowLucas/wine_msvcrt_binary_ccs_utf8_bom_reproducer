@@ -1,3 +1,9 @@
+# Bug status update 21 July 2026
+
+Reported at https://bugs.winehq.org/show_bug.cgi?id=60000.
+
+Fixed with https://gitlab.winehq.org/wine/wine/-/commit/a811297907f281b8ae53f99a5f4c49de611ed050.
+
 # Wine binary `ccs=UTF-8` BOM reproducer
 
 This is a data-free reproducer for a Wine CRT incompatibility. It writes four
